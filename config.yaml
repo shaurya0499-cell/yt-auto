@@ -1,0 +1,30 @@
+# ---- Edit this file to change your niche. Nothing else needs touching. ----
+channel:
+  niche: "technology and AI news"
+  tone: "witty, confident, a little opinionated"
+  language: "English"
+  voice: "en-US-GuyNeural"          # list voices: python -m edge_tts --list-voices
+  fallback_keywords: ["futuristic city", "typing on laptop", "abstract technology"]
+
+# RSS feeds the daily topic is picked from (swap for your niche)
+sources:
+  - https://hnrss.org/frontpage?points=100
+  - https://www.theverge.com/rss/index.xml
+  - https://techcrunch.com/feed/
+
+llm:
+  model: "gemini-2.5-flash"         # free tier via Google AI Studio key
+
+video:
+  clip_seconds: 4                   # how often the stock footage changes
+
+short:
+  target_words: 110
+  privacy: private                  # change to public once you trust the output
+
+weekly:
+  target_words: 1000
+  privacy: private
+
+youtube:
+  category_id: 28                   # 28 = Science & Technology, 25 = News, 20 = Gaming, 24 = Entertainment
